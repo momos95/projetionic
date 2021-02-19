@@ -10,9 +10,16 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
+
     path: 'loicessai',
     loadChildren: () => import('./pages/loicessai/loicessai.module').then( m => m.LoicessaiPageModule)
+
+    path: 'page-leo',
+    loadChildren: () => import('./page-leo/page-leo.module').then( m => m.PageLeoPageModule)
+
+   
   },
 
 ];
