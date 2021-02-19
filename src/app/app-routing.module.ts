@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'loicessai',
+    loadChildren: () => import('./pages/loicessai/loicessai.module').then( m => m.LoicessaiPageModule)
   },
+
 ];
 
 @NgModule({
