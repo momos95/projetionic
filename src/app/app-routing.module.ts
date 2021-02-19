@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'jamal',
+    loadChildren: () => import('./jamal/jamal.module').then( m => m.JamalPageModule)
   },
+
 ];
 
 @NgModule({
