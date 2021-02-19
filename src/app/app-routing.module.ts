@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'page-leo',
+    loadChildren: () => import('./page-leo/page-leo.module').then( m => m.PageLeoPageModule)
   },
+
 ];
 
 @NgModule({
